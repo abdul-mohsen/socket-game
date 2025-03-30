@@ -9,11 +9,11 @@ import (
 )
 
 func main() {
-	ln, err := net.Listen("tcp", ":8000")
+	ln, err := net.Listen("tcp", ":4474")
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("Listening on port 8000")
+	fmt.Println("Listening on port 4474")
 	conn, err := ln.Accept()
 	if err != nil {
 		log.Fatal(err)
